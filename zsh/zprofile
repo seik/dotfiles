@@ -1,0 +1,5 @@
+# set compose key to right alt
+setxkbmap -option compose:ralt
+
+# fix java apps
+wmname LG3D &&
