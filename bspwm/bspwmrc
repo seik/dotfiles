@@ -20,7 +20,7 @@ getcolors () {
 getcolors
 
 ## Configurations -------------------------------#
-bspc monitor -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII' 'VIII'
+bspc monitor -d 'I' 'II' 'III' 'IV' 'V' 'VI' 'VII'
 
 bspc config border_width 1
 bspc config window_gap 10
@@ -42,21 +42,6 @@ bspc config focus_follows_pointer true
 
 # remove all rules first
 bspc rule -r *:*
-
-# 1 > file
-bspc rule -a Pcmanfm desktop='^3' follow=on focus=on
-
-# 2 > media
-declare -a media=(Audacity mpv mplayer lxmusic Gimp Gimp-2.8)
-for i in ${media[@]}; do
-   bspc rule -a $i desktop='^5' follow=on focus=on; done
-
-# 3 > settings
-bspc rule -a GParted desktop='^6' follow=on focus=on
-declare -a settings=(Lxappearance Lxtask Lxrandr Arandr \
-System-config-printer.py Pavucontrol Exo-helper-1)
-for i in ${settings[@]}; do
-   bspc rule -a $i desktop='^6' state=floating follow=on focus=on; done
 
 # special rules
 bspc rule -a termite-float state=floating follow=on focus=on
@@ -95,9 +80,6 @@ xsetroot -cursor_name left_ptr
 
 # Restore wallpaper
 bash $HOME/.fehbg
-
-# Start mpd
-exec mpd &
 
 # Start bspwm scripts
 bspcolors

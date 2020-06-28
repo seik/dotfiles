@@ -34,12 +34,11 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "Terminus:size=8;2"
-font-1 = "waffle:size=12;2"
+font-0 = "SFNS Display:size=10;2"
 
 modules-left = bspwm
 modules-center =
-modules-right = alsa backlight date
+modules-right = alsa date
 
 separator =
 spacing = 0
