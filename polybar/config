@@ -139,31 +139,31 @@ format = <label-state>
 
 label-monitor = %name%
 
-label-focused = 
+label-focused = ▀
 label-focused-foreground = ${color.BACKGROUND}
 label-focused-background = ${color.BLUE}
 ;label-focused-underline = ${color.RED}
-label-focused-padding = 2
+label-focused-padding = 3
 
-label-occupied = 
+label-occupied = ▀
 label-occupied-foreground = ${color.WHITE}
 label-occupied-background = ${color.WHITE}
 ;label-occupied-underline = ${color.WHITE}
-label-occupied-padding = 2
+label-occupied-padding = 3
 
-label-urgent = 
+label-urgent = ▀
 label-urgent-foreground = ${color.BACKGROUND}
 label-urgent-background = ${color.RED}
 ;label-urgent-underline = ${color.RED}
-label-urgent-padding = 2
+label-urgent-padding = 3
 
-label-empty = 
+label-empty = ▀
 label-empty-foreground = ${color.FOREGROUND}
-label-empty-padding = 2
+label-empty-padding = 3
 
 ; Separator in between workspaces
 label-separator = " "
-label-separator-padding = 0
+label-separator-padding = 1
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
