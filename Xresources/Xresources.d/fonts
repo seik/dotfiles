@@ -2,7 +2,7 @@
 ! Fonts
 ! ------------------------------------------------------------------------------
 
-URxvt.font: xft:SFNS Display:regular:size=11
-URxvt.boldFont: xft:SFNS Display:bold:size=11
-URxvt.italicFont: xft:SFNS Display:italic:size=11
-URxvt.boldItalicfont: xft:SFNS Display:boldItalic:size=11
+URxvt.font: xft:DejaVu Sans:regular:size=11
+URxvt.boldFont: xft:DejaVu Sans:bold:size=11
+URxvt.italicFont: xft:DejaVu Sans:italic:size=11
+URxvt.boldItalicfont: xft:DejaVu Sans:boldItalic:size=11
