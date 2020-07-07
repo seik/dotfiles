@@ -34,11 +34,11 @@ module-margin-left = 1
 module-margin-right = 1
 
 
-font-0 = "SFNS Display:size=10;2"
+font-0 = "DejaVu Sans:size=10;2"
 
 modules-left = bspwm
 modules-center =
-modules-right = alsa date
+modules-right = pulseaudio-control date
 
 separator =
 spacing = 0
@@ -87,39 +87,20 @@ compositing-border = over
 ;;
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/alsa]
-type = internal/alsa
+[module/pulseaudio-control]
+type = custom/script
+tail = true
+label=%output%
+format-underline = ${color.FOREGROUND}
 
-;;master-soundcard = default
-;;speaker-soundcard = default
-;;headphone-soundcard = default
-
-;;master-mixer = Master
-;;headphone-mixer = Headphone
-
-;;headphone-id = 9
-;;mapped = true
-;;interval = 5
-
-format-volume = <ramp-volume> <label-volume>
-
-format-muted = <label-muted>
-format-muted-prefix = 
-format-muted-prefix-foreground = ${color.RED}
-
-label-volume = %percentage%%
-label-muted = " Muted"
-label-muted-foreground = #757575
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
-ramp-volume-4 = 
-ramp-volume-foreground = ${color.BLUE}
-
-ramp-headphones-0 = 
-ramp-headphones-1 = 
+exec = ~/.config/polybar/scripts/pulseaudio-control.bash listen
+click-right = exec pavucontrol &
+click-left = ~/.config/polybar/scripts/pulseaudio-control.bash togmute
+click-middle = ~/.config/polybar/scripts/pulseaudio-control.bash next-sink
+scroll-up = ~/.config/polybar/scripts/pulseaudio-control.bash up
+scroll-down = ~/.config/polybar/scripts/pulseaudio-control.bash down
+label-padding = 2
+label-foreground = ${color.FOREGROUND}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -139,27 +120,27 @@ format = <label-state>
 
 label-monitor = %name%
 
-label-focused = ▀
+label-focused = ‎
 label-focused-foreground = ${color.BACKGROUND}
 label-focused-background = ${color.BLUE}
 ;label-focused-underline = ${color.RED}
-label-focused-padding = 3
+label-focused-padding = 2
 
-label-occupied = ▀
+label-occupied = ‎
 label-occupied-foreground = ${color.WHITE}
 label-occupied-background = ${color.WHITE}
 ;label-occupied-underline = ${color.WHITE}
-label-occupied-padding = 3
+label-occupied-padding = 2
 
-label-urgent = ▀
+label-urgent = ‎
 label-urgent-foreground = ${color.BACKGROUND}
 label-urgent-background = ${color.RED}
 ;label-urgent-underline = ${color.RED}
-label-urgent-padding = 3
+label-urgent-padding = 2
 
-label-empty = ▀
+label-empty = ‎
 label-empty-foreground = ${color.FOREGROUND}
-label-empty-padding = 3
+label-empty-padding = 2
 
 ; Separator in between workspaces
 label-separator = " "
