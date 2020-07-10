@@ -1,3 +1,7 @@
 #include ".Xresources.d/colors"
 #include ".Xresources.d/fonts"
 #include ".Xresources.d/rxvt-unicode"
+
+! set compose key to right alt
+setxkbmap -option compose:ralt
+
