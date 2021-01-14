@@ -1,12 +1,20 @@
 {
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
     "cSpell.userWords": [
         "unhide"
     ],
     "debug.console.fontSize": 14,
-    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.fontFamily": "'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures": true,
     "editor.fontSize": 14,
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "600",
     "editor.formatOnSave": true,
     "editor.rulers": [
         88
@@ -18,13 +26,16 @@
         "**/*.pyc": {
             "when": "$(basename).py"
         },
-        "**/__pycache__": true
+        "**/__pycache__": true,
+        ".venv": true
     },
+    "keyboard.dispatch": "keyCode",
     "python.analysis.memory.keepLibraryAst": true,
     "python.analysis.memory.keepLibraryLocalVariables": true,
     "python.autoUpdateLanguageServer": true,
     "python.formatting.provider": "black",
     "python.jediEnabled": false,
+    "python.languageServer": "Pylance",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": false,
     "python.venvPath": "~/.cache/pypoetry",
