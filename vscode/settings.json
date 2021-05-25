@@ -1,4 +1,9 @@
 {
+    "[django-html]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
     "[python]": {
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
@@ -7,6 +12,11 @@
     "cSpell.userWords": [
         "unhide"
     ],
+    "customizeUI.stylesheet": {
+        "#vscodevim\\.vim[aria-label=\"-- INSERT --\"]": "background-color: #98971a !important;",
+        "#vscodevim\\.vim[aria-label=\"-- VISUAL --\"]": "background-color: #b16286 !important;",
+        "#vscodevim\\.vim[aria-label^=\":\"]": "background-color: #7c6f64 !important;"
+    },
     "debug.console.fontSize": 14,
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingOvertype": "never",
@@ -21,6 +31,12 @@
     ],
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    "files.associations": {
+        "**/*.html": "html",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "**/templates/**/*": "django-txt",
+        "**/templates/**/*.html": "django-html"
+    },
     "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/*.pyc": {
@@ -50,7 +66,15 @@
         "**/node_modules": true
     },
     "terminal.integrated.fontSize": 14,
-    "window.zoomLevel": 0,
-    "workbench.colorCustomizations": {},
-    "workbench.colorTheme": "Material Theme Ocean"
+    "vim.cursorStylePerMode.insert": "block",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1A1A1A",
+        "statusBar.noFolderBackground": "#212121"
+    },
+    "workbench.editorAssociations": [
+        {
+            "filenamePattern": "*.ipynb",
+            "viewType": "jupyter.notebook.ipynb"
+        }
+    ]
 }
