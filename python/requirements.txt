@@ -1,0 +1,5 @@
+pynvim==0.4.3
+ipython==7.26.0
+ipython-genutils==0.2.0
+cookiecutter==1.7.3
+virtualenv==20.7.1
