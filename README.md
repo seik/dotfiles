@@ -20,8 +20,6 @@
 
 ## Things used:
 
-- Terminal: termite
+- Terminal: gnome
 - Shell: zsh
-- WM: bspwm
-- Other: feh, picom, dunst
-
+- Editor: nvim (lunarvim)
